@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faiqin Optik</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+.navbar-custom {
+  background-color: #ffffff;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+  color: #0d6efd;
+}
+.navbar-custom .nav-link {
+  color: #333;
+  font-weight: 500;
+  margin-right: 12px;
+  transition: all 0.3s ease;
+}
+.navbar-custom .nav-link:hover {
+  color: #0d6efd;
+}
+.navbar-custom .nav-link.active {
+  color: #0d6efd;
+}
+.navbar-custom .dropdown-menu {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #f1f5ff;
+  color: #0d6efd;
+}
+
+/* Search */
+.navbar-custom .form-control {
+  border-radius: 20px;
+}
+
+.navbar-custom .btn-outline-primary {
+  border-radius: 20px;
+}
+
+    
+    body {
+      background-color: #f4f6f8;
+    }
+
+    /* wrapper konten di bawah navbar */
+    .content-wrapper {
+      background-color: #eaf1f7;
+      padding-top: 30px;
+    }
+
+    /* section umum */
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    /* slider */
+    #slider {
+      background-color: #ddeaf5;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    #slider img {
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* produk */
+    #produk {
+      background-color: #ffffff;
+      padding: 60px 0;
+      border-radius: 12px;
+    }
+
+    /* lokasi + sosmed */
+    .info-section {
+      background-color: #e3edf6;
+      padding: 50px 30px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    footer {
+      background-color: rgb(0, 217, 255);
+    }
+  </style>
+</head>
+
+<body>
+
+<section id="menu">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="assets/img/logo.jpg" alt="Logo" height="40">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+            data-bs-toggle="dropdown">
+            Our Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="productP.html">Produk Pria</a></li>
+            <li><a class="dropdown-item" href="#">Produk Wanita</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Produk Balita</a></li>
+          </ul>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalRegister">
+  Register
+</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalKontak">
+  Kontak Kami
+</a>
+        </li>
+        
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+</section>
+
+<div class="content-wrapper">
+
+  <div class="container">
+
+    
+    <section id="slider" class="section-padding">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="assets/img/cloudy-mountains-landscape-sunset.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/img/volcano-with-mist-sunset.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/img/mountainous-landscape-with-fog.jpg" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produk" class="section-padding bg-white">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Produk Best Seller</h2>
+      <p class="text-muted">Produk favorit pelanggan kami</p>
+    </div>
+
+    <div class="row g-4">
+
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/product/produk1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produk Best Seller 1</h5>
+            <p class="card-text">Deskripsi singkat produk best seller.</p>
+            <p class="fw-bold text-danger">Rp 150.000</p>
+            <a href="#" class="btn btn-primary w-100">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/product/produk2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produk Best Seller 2</h5>
+            <p class="card-text">Produk paling diminati minggu ini.</p>
+            <p class="fw-bold text-danger">Rp 175.000</p>
+            <a href="#" class="btn btn-primary w-100">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/product/produk3.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produk Best Seller 3</h5>
+            <p class="card-text">Kualitas premium, harga terjangkau.</p>
+            <p class="fw-bold text-danger">Rp 200.000</p>
+            <a href="#" class="btn btn-primary w-100">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/product/produk4.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produk Best Seller 4</h5>
+            <p class="card-text">Produk favorit pelanggan setia.</p>
+            <p class="fw-bold text-danger">Rp 160.000</p>
+            <a href="#" class="btn btn-primary w-100">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/product/produk5.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produk Best Seller 5</h5>
+            <p class="card-text">Stok terbatas, buruan beli!</p>
+            <p class="fw-bold text-danger">Rp 180.000</p>
+            <a href="#" class="btn btn-primary w-100">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/img/product/produk6.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Produk Best Seller 6</h5>
+            <p class="card-text">Rekomendasi terbaik untuk kamu.</p>
+            <p class="fw-bold text-danger">Rp 190.000</p>
+            <a href="#" class="btn btn-primary w-100">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <div class="info-section">
+      <div class="row">
+
+        <div class="col-md-6 mb-3">
+          <h5 class="fw-bold">Lokasi</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4255.1610485625815!2d112.62404777500657!3d-7.937972992086087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629e6b8f41bcf%3A0x8b409da605dc7bd9!2sINSTITUT%20ASIA!5e1!3m2!1sid!2sid!4v1769628377257!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-sm-6">
+  <div class="card h-100 shadow-sm">
+    <div class="card-body">
+      <h5 class="fw-bold">Our Media Social</h5>
+
+      <ul class="list-unstyled mt-3">
+
+        <li class="mb-2">
+          <a href="https://facebook.com" target="_blank"
+             class="text-decoration-none d-flex align-items-center">
+            <i class="bi bi-facebook fs-4 text-primary me-2"></i> Facebook
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="https://youtube.com" target="_blank"
+             class="text-decoration-none d-flex align-items-center">
+            <i class="bi bi-youtube fs-4 text-danger me-2"></i> YouTube
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="https://x.com" target="_blank"
+             class="text-decoration-none d-flex align-items-center">
+            <i class="bi bi-twitter-x fs-4 text-dark me-2"></i> X (Twitter)
+          </a>
+        </li>
+
+        <li class="mb-2">
+          <a href="https://wa.me/628xxxxxxxxxx" target="_blank"
+             class="text-decoration-none d-flex align-items-center">
+            <i class="bi bi-whatsapp fs-4 text-success me-2"></i> WhatsApp
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="text-light mt-5" style="background-color: rgb(0,217,255);">
+  <div class="container py-5">
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">Tentang Kami</h5>
+        <p class="small">
+          Kami adalah perusahaan yang bergerak di bidang penjualan produk
+          berkualitas dengan pelayanan profesional dan transaksi aman.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">Menu</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Produk</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Best Seller</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Register</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">Kontak</h5>
+        <p class="small mb-1">📍 Malang, Jawa Timur</p>
+        <p class="small mb-1">📧 info@perusahaan.com</p>
+        <p class="small mb-1">📞 +62 8xx-xxxx-xxxx</p>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center small">
+      © 2025 Faiqin Optik. All Rights Reserved.
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<div class="modal fade" id="modalKontak" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Form Feedback Pengunjung</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+
+
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" placeholder="Jawaban Anda">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Jawaban Anda">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Seberapa puas Anda dengan layanan kami?</label>
+            <select class="form-select">
+              <option selected>Pilih jawaban</option>
+              <option>Sangat Puas</option>
+              <option>Puas</option>
+              <option>Cukup</option>
+              <option>Kurang Puas</option>
+              <option>Tidak Puas</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Masukan / Saran</label>
+            <textarea class="form-control" rows="4" placeholder="Jawaban Anda"></textarea>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button class="btn btn-primary">Kirim</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalRegister" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Form Registrasi Pengguna</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+
+          
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" placeholder="Jawaban Anda">
+          </div>
+
+         
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Jawaban Anda">
+          </div>
+
+         
+          <div class="mb-3">
+            <label class="form-label">No. WhatsApp</label>
+            <input type="text" class="form-control" placeholder="08xxxxxxxxxx">
+          </div>
+
+        
+          <div class="mb-3">
+            <label class="form-label">Daftar Sebagai</label>
+            <select class="form-select">
+              <option selected>Pilih jawaban</option>
+              <option>Pembeli</option>
+              <option>Seller</option>
+            </select>
+          </div>
+
+        
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Jawaban Anda">
+          </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        <button class="btn btn-success">Daftar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
